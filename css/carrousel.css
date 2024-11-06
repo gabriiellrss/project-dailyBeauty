@@ -1,0 +1,16 @@
+#carousel-inner {
+    width: 100vi;
+    overflow: hidden;
+
+    img{
+        width: auto;
+        object-fit: cover;
+        height: 500px;
+    }
+
+
+}
+
+
+
+

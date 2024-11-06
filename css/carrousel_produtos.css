@@ -1,0 +1,58 @@
+#divbtn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 99;
+}
+
+#scrollLeft{
+    margin-left: 25px;
+}
+
+#scrollRight{
+    margin-right: 25px;
+}
+
+svg {
+    
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    background-color: rgba(154, 154, 154, 0.5);
+}
+
+.btn-custom  {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important; 
+    border-radius: 50%;
+}
+
+  #Icon-Color {
+    transition: 0.3s;
+    fill: rgba(0, 0, 0, 0.3);
+    
+  }
+
+  .btn-custom svg:hover {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+  }
+
+  .btn-custom svg:active {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: 0.8s;
+  }
+
+  .btn-custom svg:hover #Icon-Color {
+    fill: rgba(0, 0, 0, 1);
+  }
+
+  .btn-custom svg:active #Icon-Color {
+    fill: rgba(0, 0, 0, 0.5);
+  }
