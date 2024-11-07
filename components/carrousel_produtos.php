@@ -1,46 +1,19 @@
 <?php
 
 $Title = "Exemplo de Título";  
-$Video = [
-    ['link' => 'https://www.youtube.com/embed/video1', 'title' => 'teste'], 
-    ['link' => 'https://www.youtube.com/embed/video2', 'title' => 'teste'],
-    ['link' => 'https://www.youtube.com/embed/video3', 'title' => 'teste'],
-    ['link' => 'https://www.youtube.com/embed/video3', 'title' => 'teste'],
-    ['link' => 'https://www.youtube.com/embed/video3', 'title' => 'teste'],
-
-    ['link' => 'https://www.youtube.com/embed/video3', 'title' => 'teste'],
-
-
+$Card = [
+    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'gabriel', 'subTitle' => 'teste', 'descricao' => 'teste',], 
+    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
+    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
+    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
+    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
 
 ];
 ?>
 
-<div class="align-items-center justify-content-between mt-3 mr- ml-4" style="width: 100%; overflow: hidden;">
-  <h1><?php echo $Title; ?></h1>
-  
-  <div id="scrollContainer" class="d-flex" style="scroll-behavior: initial; column-gap: 10px; 
-  overflow: hidden; ">
-    <?php 
-        foreach ($Video as $index => $video): 
-    ?>
-      <div 
-      class="card" 
-      <?php echo 'style="width: 300px; min-width: 300px; max-height: auto; border-radius: 15px; height: 100%;' . ($index === count($Video) - 1 ? ' margin-right: 2em;' : '') . '"'; ?>
-      >
-        <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          b5
-        </div>
-      </div>
-        
-    <?php 
-        endforeach; 
-    ?>
+<div class="align-items-center justify-content-between mt-3 mr- ml-4 position-relative" style="width: 100%; overflow: hidden; height: 700px">
+  <h1 class="ms-4"><?php echo $Title; ?></h1>
 
-<div id="divbtn" class="">
     <button id="scrollLeft" class="btn btn-custom">
       <svg style="color: blue; fill: blue" height="2em" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
         <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -57,6 +30,31 @@ $Video = [
         </g>
       </svg>
     </button>
+  
+  <div id="scrollContainer" class="d-flex" style="scroll-behavior: initial; column-gap: 10px; 
+  overflow: hidden; ">
+
+    <?php 
+        foreach ($Card as $index => $Card): 
+    ?>
+      <div 
+      <?php echo ($index == 0 ? 'class="card ms-4"' : 'class="card"') . '"'; ?> 
+      <?php echo 'style="width: 300px; min-width: 300px; max-height: auto; border-radius: 15px; max-height: 100% !important;' . ($index == count($Card) +1 ? ' margin-right: 2em;' : '') . '"'; ?>
+      >
+        <img <?php echo 'src="' . $Card['imagem'] . '"'; ?>  class="card-img-top" style="min-width: 300px; width: 300px; " alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $Card['title']?></h5>
+          <h6 class="card-subtitle mb-2 text-muted "><?php $Card['subTitle']?></h6>
+          <p class="card-text"><?php echo $Card['descricao']?></p>
+          b5
+        </div>
+      </div>
+        
+    <?php 
+        endforeach; 
+    ?>
+
+  </div>
 
     <button id="scrollRight" class="btn btn-custom">
       <svg height="2em" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
@@ -74,8 +72,6 @@ $Video = [
         </g>
       </svg>
     </button>
-  </div>
-  </div>
 
   
 </div>
