@@ -25,5 +25,23 @@
         include_once './components/carrousel.php';
         include_once './components/carrousel_produtos.php'
     ?>
+
+    <div class="container d-flex justify-content-center mt-3 mb-3 w-100">
+        <button type="button" class="btn btn-primary">Ver mais produtos</button>
+    </div>
+
+    <div class=" bg-dark-subtle">
+        <div class="container d-flex justify-content-center row m-auto text-center pt-3 pb-3">
+            <h1>Olá Mundo!</h1>
+            <p>Decrisão de alguma coisa que eu não sei</p>
+
+            <div class="d-flex justify-content-evenly">
+                <button type="button" class="btn btn-danger">Button 1</button>
+                <button type="button" class="btn btn-primary w-75">Button 2</button>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

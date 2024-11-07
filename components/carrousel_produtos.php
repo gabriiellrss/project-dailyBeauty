@@ -11,7 +11,7 @@ $Card = [
 ];
 ?>
 
-<div class="align-items-center justify-content-between mt-3 mr- ml-4 position-relative" style="width: 100%; overflow: hidden; height: 700px">
+<div class="align-items-center justify-content-between mt-3 mr- ml-4 position-relative" style="width: 100%; overflow: hidden; height: 700">
   <h1 class="ms-4"><?php echo $Title; ?></h1>
 
     <button id="scrollLeft" class="btn btn-custom">
