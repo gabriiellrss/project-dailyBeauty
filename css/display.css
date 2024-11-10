@@ -1,4 +1,7 @@
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 @media (max-width: 932px) {
 
     .carousel-control-next-icon, .carousel-control-prev-icon {

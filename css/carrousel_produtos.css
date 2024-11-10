@@ -19,7 +19,7 @@
 
 }
 
-svg {
+.btn-custom svg {
     width: 50px;
     height: 50px;
     padding: 10px;
@@ -29,12 +29,12 @@ svg {
     transition: 0.5s;
 }
 
-svg:hover {
+.btn-custom svg:hover {
   transition: 1s;
   background-color: rgba(196, 193, 193, 0.5);
 }
 
-svg:active {
+.btn-custom svg:active {
   transition: 0.5s;
   background-color: rgba(66, 66, 66, 0.5);
 }

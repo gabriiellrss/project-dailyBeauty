@@ -1,20 +1,54 @@
+
+
+
 <?php
 
-$Title = "Exemplo de Título";  
+$Title = "Nossos produtos:";  
 $Card = [
-    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'gabriel', 'subTitle' => 'teste', 'descricao' => 'teste',], 
-    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
-    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
-    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
-    ['imagem' => 'https://th.bing.com/th/id/OIP.Q7WUVPpgS5JOVqHL4kq_ggHaEK?rs=1&pid=ImgDetMain', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/fml-pm-thumb.png?rev=-1?w=250&hash=158F66A06E12B5EC1B0CA9450EF2F421', 'title' => 'Hidratação Facial', 'subTitle' => null, 'descricao' => null,], 
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/moisturising-cream-thumb.png?rev=-1?w=250&hash=DEBA08BA406FA526D2361C2302D4911D', 'title' => 'Hidratação corporal', 'subTitle' => null, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/gel-de-limpeza-thumb.png?rev=-1?w=250&hash=95375B707BD592EF06EB74627CFD61A9', 'title' => 'limpeza Facial', 'subTitle' => null, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/foaming-oil-cleanser-thumb.png?rev=-1?w=250&hash=D16DDDA74554EEB269529CE90249D0D5', 'title' => 'Limpeza Corporal', 'subTitle' => null, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/acne-thumb.png?rev=-1?w=250&hash=F0F75844B896EFAED1BFBC2214CE4977', 'title' => 'Acne', 'subTitle' => null, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/todos-os-produtos/acne', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
 
 ];
 ?>
 
-<div class="align-items-center justify-content-between mt-3 mr- ml-4 position-relative" style="width: 100%; overflow: hidden; height: 700">
-  <h1 class="ms-4"><?php echo $Title; ?></h1>
+<style>
 
-    <button id="scrollLeft" class="btn btn-custom">
+    #scrollContainer {
+      scroll-behavior: initial; 
+      column-gap: 10px; 
+      height: 100% !important;
+      overflow: hidden; 
+    }
+
+    .card {
+      cursor: pointer;
+      min-width: 200px;  
+      border-radius: 15px;
+      transition: 0.3s;
+      transform-origin: center; 
+    }
+    
+    .card:hover {
+      cursor: pointer;
+      transition: 0.5s;
+      min-width: 250px !important; 
+      /*box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);*/
+    }
+
+</style>
+
+<div class="container m-5">
+    <h1 class="title m-0"><?php echo $Title; ?></h1>
+  </div>
+
+<div class="align-items-center justify-content-center d-flex position-relative" style="width: 100%; overflow: hidden; height: 400px">
+
+
+    <button id="scrollLeft" class="btn btn-custom carousel-control-prev">
       <svg style="color: blue; fill: blue" height="2em" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
         <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Rounded" transform="translate(-652.000000, -2464.000000)">
@@ -31,22 +65,21 @@ $Card = [
       </svg>
     </button>
   
-  <div id="scrollContainer" class="d-flex" style="scroll-behavior: initial; column-gap: 10px; 
-  overflow: hidden; ">
+  <div id="scrollContainer" class="d-flex p-3">
 
     <?php 
         foreach ($Card as $index => $Card): 
     ?>
       <div 
       <?php echo ($index == 0 ? 'class="card ms-4"' : 'class="card"') . '"'; ?> 
-      <?php echo 'style="width: 300px; min-width: 300px; max-height: auto; border-radius: 15px; max-height: 100% !important;' . ($index == count($Card) +1 ? ' margin-right: 2em;' : '') . '"'; ?>
+      <?php echo 'style="' . ($index == count($Card) +1 ? ' margin-right: 2em;' : '') . '"'; ?>
       >
-        <img <?php echo 'src="' . $Card['imagem'] . '"'; ?>  class="card-img-top" style="min-width: 300px; width: 300px; " alt="...">
+        <img <?php echo 'src="' . $Card['imagem'] . '"'; ?>  class="card-img-top p-3" alt="...">
         <div class="card-body">
-          <h5 class="card-title"><?php echo $Card['title']?></h5>
+          <h5 class="card-title text-center"><?php echo $Card['title']?></h5>
           <h6 class="card-subtitle mb-2 text-muted "><?php $Card['subTitle']?></h6>
           <p class="card-text"><?php echo $Card['descricao']?></p>
-          b5
+          
         </div>
       </div>
         
@@ -56,7 +89,7 @@ $Card = [
 
   </div>
 
-    <button id="scrollRight" class="btn btn-custom">
+    <button id="scrollRight" class="btn btn-custom carousel-control-next">
       <svg height="2em" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
         <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Rounded" transform="translate(-687.000000, -2464.000000)">
@@ -72,8 +105,6 @@ $Card = [
         </g>
       </svg>
     </button>
-
-  
 </div>
 
 <script>
