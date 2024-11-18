@@ -19,31 +19,32 @@
 
 }
 
-.btn-custom svg {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    backdrop-filter: blur(2px);
-    border-radius: 50%;
-    background-color: rgba(154, 154, 154, 0.5);
-    transition: 0.5s;
-}
-
-.btn-custom svg:hover {
-  transition: 1s;
-  background-color: rgba(196, 193, 193, 0.5);
-}
-
-.btn-custom svg:active {
-  transition: 0.5s;
-  background-color: rgba(66, 66, 66, 0.5);
-}
 
 .btn-custom  {
     border: none !important;
     box-shadow: none !important;
     outline: none !important; 
     border-radius: 50%;
+
+    svg {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      backdrop-filter: blur(2px);
+      border-radius: 50%;
+      background-color: rgba(154, 154, 154, 0.5);
+      transition: 0.5s;
+  }
+
+    svg:hover {
+    transition: 1s;
+    background-color: rgba(196, 193, 193, 0.5);
+  }
+  
+    svg:active {
+    transition: 0.5s;
+    background-color: rgba(66, 66, 66, 0.5);
+  }
 }
 
   #Icon-Color {

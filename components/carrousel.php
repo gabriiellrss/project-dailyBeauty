@@ -5,20 +5,24 @@
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
             </div>
 
             <div class="carousel-inner m-auto mt-3 rounded-5" id="carousel-inner" style="width: 95%;">
               <div class="carousel-item active">
-                <img src="https://thumbs.dreamstime.com/b/foto-di-una-giovane-donna-colpevole-vestita-strisce-con-un-dispositivo-moderno-che-punge-uno-sfondo-giallo-labbro-217488618.jpg" class="d-block w-100" alt="...">
-    
+                <div class="ratio ratio-16x9">
+                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                </div>       
                 
                 <div class="carousel-caption d-none d-md-block " style="width: 100em !important; height: 50%;">
                 <div class="position-relative" >
-                    <div class="position-absolute top-50 start-0">
+                    <!--<div class="position-absolute top-50 start-0">
                       <h1 class="text-light shadow-sm p-3 mb-5 bg-body-tertiary rounded">Descobriu que seu namorado estava te traindo?</h1>
                       <h2 class="text-bg-danger rounded">Temos a solução</h2>
                       <button type="button" class="btn btn-primary">Clique aqui</button>
-                    </div>
+                    </div>-->
                   </div>
                   <h5></h5>
                   <p></p>
@@ -26,18 +30,41 @@
               </div>
 
               <div class="carousel-item" autoplay control>
-                <video class="d-block w-100">
+                <!--<video class="d-block w-100">
                   <source src="./assets/SVG/snapinstaapp-video-0742536e4e971baf3c0630e050e83ab5-video-dashinit_fgo1bVSa.mp4" type="video/mp4">
-                </video>
-                <!--<img src="./assets/imagens/bg-1.jpg" class="d-block w-100" alt="..."> -->
-                <div class="carousel-caption d-none d-md-block">
+                </video>-->
+                <div class="ratio ratio-16x9">
+                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                </div>                   <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img src="./assets/imagens/bg-2.jpeg" class="d-block w-100" alt="...">
+                <div class="ratio ratio-16x9">
+                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                </div>                   <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+
+              
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                </div>                
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                </div>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>

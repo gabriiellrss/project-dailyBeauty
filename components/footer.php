@@ -64,16 +64,18 @@
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <h6 class="text-uppercase">Outros</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Declaração de Acessibilidade</a></li>
-                        <li><a href="#">Termos de Permissão de Conteúdo do Usuário</a></li>
-                        <li><a href="#">Mapa do Site</a></li>
-                        <li><a href="#">Países e Regiões</a></li>
-                        <li><a href="#">Política de Cookies</a></li>
-                    </ul>
+                <h6 class="text-uppercase">Nossa Localização</h6>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6902.610321197191!2d-46.611189968177364!3d-23.585301068564572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1731290899606!5m2!1spt-BR!2sbr" 
+                    class="rounded"
+                    width="" 
+                    height="" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
                 </div>
-            </div>
 
             <div class="footer-bottom">
                 <p>CeraVe não trata as condições subjacentes da pele. MVE é uma marca comercial da DFB Technology, Ltd. Patente Nº. 6,709,663. © 2022 CeraVe</p>

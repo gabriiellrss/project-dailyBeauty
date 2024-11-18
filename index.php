@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/display.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/carrousel_produtos.css">
+    <link rel="stylesheet" href="./css/carrouselProdutos.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
@@ -42,8 +42,13 @@
         </div>
     </div>
 
+    <div class="container m-5 mb-0">
+        <h1 class="title text-xxl-start">Produtos de Qualidade</h1>
+    </div>
+
     <?php
-        include_once './components/footer.php'
+        include_once './components/video.php';
+        include_once './components/footer.php';
     ?>
 
 </body>

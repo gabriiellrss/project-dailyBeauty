@@ -10,7 +10,10 @@ $Card = [
     ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/gel-de-limpeza-thumb.png?rev=-1?w=250&hash=95375B707BD592EF06EB74627CFD61A9', 'title' => 'limpeza Facial', 'subTitle' => null, 'descricao' => null],
     ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/foaming-oil-cleanser-thumb.png?rev=-1?w=250&hash=D16DDDA74554EEB269529CE90249D0D5', 'title' => 'Limpeza Corporal', 'subTitle' => null, 'descricao' => null],
     ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/acne-thumb.png?rev=-1?w=250&hash=F0F75844B896EFAED1BFBC2214CE4977', 'title' => 'Acne', 'subTitle' => null, 'descricao' => null],
-    ['imagem' => 'https://www.cerave.com.br/todos-os-produtos/acne', 'title' => 'teste', 'subTitle' => 'teste', 'descricao' => 'teste'],
+    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
 
 ];
 ?>
@@ -71,8 +74,7 @@ $Card = [
         foreach ($Card as $index => $Card): 
     ?>
       <div 
-      <?php echo ($index == 0 ? 'class="card ms-4"' : 'class="card"') . '"'; ?> 
-      <?php echo 'style="' . ($index == count($Card) +1 ? ' margin-right: 2em;' : '') . '"'; ?>
+      <?php echo ($index == 0 ? 'class="card ms-5"' : ($index == 8 ? 'class="card me-5"' : 'class="card"')) . '"'; ?>
       >
         <img <?php echo 'src="' . $Card['imagem'] . '"'; ?>  class="card-img-top p-3" alt="...">
         <div class="card-body">
