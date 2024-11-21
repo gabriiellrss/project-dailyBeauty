@@ -1,5 +1,6 @@
 <style>
         .footer {
+            background-color: black;
             color: white;
             padding: 40px 0;
         }
@@ -78,7 +79,7 @@
                 </div>
 
             <div class="footer-bottom">
-                <p>CeraVe não trata as condições subjacentes da pele. MVE é uma marca comercial da DFB Technology, Ltd. Patente Nº. 6,709,663. © 2022 CeraVe</p>
+                <p class="text-info">CeraVe não trata as condições subjacentes da pele. MVE é uma marca comercial da DFB Technology, Ltd. Patente Nº. 6,709,663. © 2022 CeraVe</p>
                 <div class="footer-icons">
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok"></a>

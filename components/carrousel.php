@@ -1,5 +1,5 @@
-    <section >
-        <div id="carouselExampleCaptions" class="carousel slide data-bs-ride="carousel">
+    <section class="position-relative pt-5" style="background-image: url('./assets/SVG/fundo-01.png');">
+        <div id="carouselExampleCaptions" class="carousel slide data-bs-ride="carousel>
 
             <div class="carousel-indicators text-dark">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -13,7 +13,7 @@
             <div class="carousel-inner m-auto mt-3 rounded-5" id="carousel-inner" style="width: 95%;">
               <div class="carousel-item active">
                 <div class="ratio ratio-16x9">
-                  <img src="https://img.freepik.com/fotos-gratis/retrato-de-mulher-morena-com-cabelos-cacheados_273609-19745.jpg?t=st=1731267529~exp=1731271129~hmac=32ac9e8f3ddc7e52a5d13af0313c2c6fbd70f689886851545631f05d1aef6c13&w=900" class="d-block w-100" alt="Imagem do carrossel">
+                  <img src="./assets/imagens/carousel01.png" class="d-block w-100" alt="Imagem do carrossel">
                 </div>       
                 
                 <div class="carousel-caption d-none d-md-block " style="width: 100em !important; height: 50%;">
@@ -107,4 +107,5 @@
             </button>
 
           </div>
+          
     </section>

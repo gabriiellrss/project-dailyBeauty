@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+h1, h2, p {
+    color: #433833;
+}
+  
+@media (max-width: 932px) {
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        
+        display: none !important;
+    }
+
+    #navBar-brand {
+        height: 150px;
+
+
+    }
+}
+

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: primary;
+    src: url(/assets/font/LeJourSerif.ttf) format('truetype');
+}
+
+.font-custom, h1 {
+    font-family: primary;
+}

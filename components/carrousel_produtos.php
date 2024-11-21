@@ -11,14 +11,29 @@ $Card = [
     ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/foaming-oil-cleanser-thumb.png?rev=-1?w=250&hash=D16DDDA74554EEB269529CE90249D0D5', 'title' => 'Limpeza Corporal', 'subTitle' => null, 'descricao' => null],
     ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/thumbnail-images/acne-thumb.png?rev=-1?w=250&hash=F0F75844B896EFAED1BFBC2214CE4977', 'title' => 'Acne', 'subTitle' => null, 'descricao' => null],
     ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
-    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
-    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
-    ['imagem' => 'assets\imagens\produtos\oil-control-1-LG-removebg-preview.png', 'title' => 'Loção Facial Oil Control', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => './assets/imagens/produtos/spf-50-1-LG.jpg', 'title' => 'Loção Facial Hidratante FPS50', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/pdp/new-packshots/creme-reparador-para-olhos/produto-fundo-branco-lg.jpg?rev=-1?w=500&hash=58141FCF82C6D2618AF0DC62350F1430', 'title' => 'Creme Reparador Para Olhos', 'subTitle' =>  NULL, 'descricao' => null],
+    ['imagem' => 'https://www.cerave.com.br/-/media/project/loreal/brand-sites/cerave/americas/br/scx/pdp/new-packshots/locao-hidratante/hidratante-473ml-front-lg.jpg?rev=-1?w=500&hash=45E5BB873B563614EEC9EE9194AA5B2F', 'title' => 'Loção Hidratante', 'subTitle' =>  NULL, 'descricao' => null],
 
 ];
 ?>
 
 <style>
+  .btn-primary-custom {
+    
+      background-color: #433833;
+      color: white;
+  }
+
+  .btn-primary-custom:hover {
+      background-color: #63544d;
+      color: white;
+  }
+
+  .btn-primary-custom:active {
+      background-color: #52453f !important;
+      color: white !important;
+  }
 
     #scrollContainer {
       scroll-behavior: initial; 
@@ -37,8 +52,8 @@ $Card = [
     
     .card:hover {
       cursor: pointer;
-      transition: 0.5s;
-      min-width: 250px !important; 
+      /*transition: 0.1s;
+      min-width: 250px !important; */
       /*box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);*/
     }
 
@@ -48,7 +63,7 @@ $Card = [
     <h1 class="title m-0"><?php echo $Title; ?></h1>
   </div>
 
-<div class="align-items-center justify-content-center d-flex position-relative" style="width: 100%; overflow: hidden; height: 400px">
+<div class="align-items-center justify-content-center d-flex position-relative" style="width: 100%; overflow: hidden; height: 400px; background-image: url('./assets/SVG/fundo-01.png');">
 
 
     <button id="scrollLeft" class="btn btn-custom carousel-control-prev">
@@ -108,6 +123,11 @@ $Card = [
       </svg>
     </button>
 </div>
+
+    <div class="container d-flex justify-content-center mt-3 mb-3 w-100 position-relative">
+        <button type="button" class="btn btn-primary-custom">Ver mais produtos</button>
+
+    </div>
 
 <script>
   document.getElementById('scrollLeft').addEventListener('click', function() {
