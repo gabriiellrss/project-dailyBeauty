@@ -47,21 +47,16 @@
                 <div class="col-md-3 mb-4">
                     <h6 class="text-uppercase">Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#">Nossos Produtos</a></li>
-                        <li><a href="#">Ingredientes CeraVe</a></li>
-                        <li><a href="#">Dicas sobre Skincare</a></li>
-                        <li><a href="#">Porque CeraVe</a></li>
-                        <li><a href="#">DermaClub</a></li>
+                        <li><a href="./produtos.php">Nossos Produtos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4">
                     <h6 class="text-uppercase">Suporte</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#">Fale Conosco</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos e Condições</a></li>
-                        <li><a href="#">Privacidade - Meus Direitos</a></li>
+                        <li><a href="https://wa.me/5581993310136">Fale Conosco</a></li>
+                        <li><a href="./faqs.php">FAQs</a></li>
+                        <li><a href="./politica&privacidade.php">Política de Privacidade</a></li>
+
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -79,7 +74,7 @@
                 </div>
 
             <div class="footer-bottom">
-                <p class="text-info">CeraVe não trata as condições subjacentes da pele. MVE é uma marca comercial da DFB Technology, Ltd. Patente Nº. 6,709,663. © 2022 CeraVe</p>
+                <p class="text-info">© 2024 Daily Beauty</p>
                 <div class="footer-icons">
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
                     <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok"></a>

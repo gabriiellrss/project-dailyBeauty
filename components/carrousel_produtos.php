@@ -125,7 +125,7 @@ $Card = [
 </div>
 
     <div class="container d-flex justify-content-center mt-3 mb-3 w-100 position-relative">
-        <button type="button" class="btn btn-primary-custom">Ver mais produtos</button>
+        <a href="./produtos.php" type="button" class="btn btn-primary-custom">Ver mais produtos</a>
 
     </div>
 

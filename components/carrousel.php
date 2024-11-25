@@ -10,7 +10,7 @@
 
             </div>
 
-            <div class="carousel-inner m-auto mt-3 rounded-5" id="carousel-inner" style="width: 95%;">
+            <div class="carousel-inner m-auto mt-4 rounded-5" id="carousel-inner" style="width: 95%;">
               <div class="carousel-item active">
                 <div class="ratio ratio-16x9">
                   <img src="./assets/imagens/carousel01.png" class="d-block w-100" alt="Imagem do carrossel">

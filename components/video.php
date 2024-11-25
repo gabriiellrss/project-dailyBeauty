@@ -31,6 +31,6 @@
 </div>
 
 <div class="container d-flex justify-content-center ">
-    <button type="button" class="btn btn-primary-custom">Ver mais sobre este produto</button>
+    <a href="./produtos.php#acne" type="button" class="btn btn-primary-custom">Ver mais sobre este produto</a>
 </div>
 </section>
